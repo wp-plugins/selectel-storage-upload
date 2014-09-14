@@ -1,4 +1,4 @@
-=== Selectel Storage Uploader ===
+=== Selectel Cloud Uploader ===
 Contributors: Mauhem
 Donate link: http://wm-talk.net/supload-wordpress-plagin-dlya-zagruzki-na-selectel
 Tags: uploads, selectel, cdn, storage, media library
