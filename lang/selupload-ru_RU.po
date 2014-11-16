@@ -1,0 +1,211 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Selectel Storage Upload v1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-15 16:07+0300\n"
+"PO-Revision-Date: 2014-11-15 16:07+0300\n"
+"Last-Translator: Mauhem <me@wm-talk.net>\n"
+"Language-Team: Mauhem <me@wm-talk.net>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%100/10==1 ? 2 : n%10==1 ? 0 : (n"
+"+9)%10>3 ? 2 : 1;\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: supload.php:27
+msgid ""
+"Plugin Selectel Cloud Uploader requires PHP 5.3.3 or higher. The plugin has "
+"now disabled itself."
+msgstr ""
+"Для работы плагина Selectel Cloud Upload необходимо, чтобы версия PHP была "
+"не ниже 5.3.3. Плагин сейчас отключен."
+
+#: supload.php:36
+msgid ""
+"Plugin Selectel Cloud Uploader requires cURL 7.16.2+. The plugin has now "
+"disabled itself."
+msgstr ""
+"Для работы плагина Selectel Cloud Upload необходимо, чтобы версия cURL была "
+"не ниже 7.16.2+. Плагин сейчас отключен."
+
+#: supload.php:41
+msgid ""
+"Plugin Selectel Cloud Uploader requires that cURL is compiled with OpenSSL. "
+"The plugin has now disabled itself."
+msgstr ""
+"Для работы плагина Selectel Cloud Upload необходимо, чтобы cURL был "
+"скомпилирован с поддержкой OpenSSL. Плагин сейчас отключен."
+
+# @ supload
+#: supload.php:71
+msgid "Connection is successfully established. Save the settings."
+msgstr "Соединение успешно установлено. Сохраните настройки."
+
+# @ supload
+#: supload.php:73 supload.php:226
+msgid "Connection is not established."
+msgstr "Не удалось подключиться к контейнеру."
+
+#: supload.php:242
+msgid "Impossible to upload a file"
+msgstr "Невозможно загрузить файл"
+
+#: supload.php:246
+msgid "Do not have access to the file"
+msgstr "Файл не существует или недоступен для чтения"
+
+# @ supload
+#: supload.php:285
+msgid "Settings"
+msgstr "Настройки"
+
+# @ supload
+#: supload.php:308
+msgid "Type the information for access to your bucket."
+msgstr "Введите информацию для доступа к вашему контейнеру."
+
+#: supload.php:310
+msgid "No account? <a href =\"http://goo.gl/8Z0q8H\">Sign up</a>"
+msgstr "Нет аккаунта? <a href =\"http://goo.gl/8Z0q8H\">Зарегистрироваться</a>"
+
+# @ supload
+#: supload.php:314
+msgid "Username"
+msgstr "Имя пользователя"
+
+# @ supload
+#: supload.php:325
+msgid "Password"
+msgstr "Пароль"
+
+# @ supload
+#: supload.php:336
+msgid "Bucket"
+msgstr "Контейнер"
+
+# @ supload
+#: supload.php:345
+msgid "Check the connection"
+msgstr "Проверить соединение"
+
+# @ supload
+#: supload.php:349
+msgid "Local path"
+msgstr "Локальный путь"
+
+# @ supload
+#: supload.php:356
+msgid "Local path to the uploaded files. By default"
+msgstr "Локальный путь к загружаемым файлам. По умолчанию"
+
+# @ supload
+#: supload.php:363
+msgid "Full URL-path to files"
+msgstr "Полный URL-путь к файлам"
+
+# @ supload
+#: supload.php:374
+msgid ""
+"Enter the domain or subdomain if store files only in the Selectel Storage"
+msgstr ""
+"Введите адрес домена/поддомена, если файлы хранятся только в Selectel Storage"
+
+# @ supload
+#: supload.php:378
+msgid "or full url path, if only used synchronization"
+msgstr "или полный Url адрес, если используется только синхронизация"
+
+# @ supload
+#: supload.php:386
+msgid "Authorization server"
+msgstr "Сервер Аторизации"
+
+# @ supload
+#: supload.php:395
+msgid "By default"
+msgstr "По умолчанию"
+
+# @ supload
+#: supload.php:401
+msgid "Synchronization settings"
+msgstr "Настройки синхронизации"
+
+# @ supload
+#: supload.php:405
+msgid "Only synchronize files"
+msgstr "Только синхронизация файлов"
+
+# @ supload
+#: supload.php:413
+msgid "Store files only in the Selectel Storage"
+msgstr "Хранить файлы только в Selectel Storage"
+
+# @ supload
+#: supload.php:417
+msgid "to attach a domain / subdomain to store and specify the settings"
+msgstr ""
+"необходимо прикрепить домен / поддомен к контейнеру в Selectel Storage и "
+"указать его в настройках"
+
+# @ supload
+#: supload.php:426
+msgid ""
+"Delete files from the Selectel Storage if they are removed from the library"
+msgstr "Удалять файлы из Selectel Storage, если они были удалены из библиотеки"
+
+#: supload.php:450
+msgid "Complete"
+msgstr "Готово"
+
+#: supload.php:485
+msgid "Catalog with files is not readable"
+msgstr "Каталог с файлами недоступен для чтения"
+
+# @ supload
+#: supload.php:527
+msgid "Manual synchronization"
+msgstr "Ручная синхронизация"
+
+# @ supload
+#: supload.php:533
+msgid ""
+"You can always help the development of plug-in and contribute to the "
+"emergence of new functionality."
+msgstr ""
+"Вы всегда можете помочь развитию плагина и способствовать появлению новой "
+"функциональности."
+
+# @ supload
+#: supload.php:539
+msgid "If you have any ideas or suggestions"
+msgstr "Если у вас есть идеи или предложения"
+
+# @ supload
+#: supload.php:542
+msgid "contact the author"
+msgstr "связаться с автором"
+
+# @ supload
+#: supload.php:548
+msgid "You can always thank the author of financially."
+msgstr "Вы всегда можете поблагодарить автора материально."
+
+# @ supload
+#: supload.php:567
+msgid "Yandex.Money"
+msgstr "Яндекс.Деньги"
+
+#~ msgid ""
+#~ "Plugin Selectel Cloud Uploader requires Zlib extension. The plugin has "
+#~ "now disabled itself."
+#~ msgstr ""
+#~ "Для работы плагина Selectel Cloud Upload необходимо, чтобы расширение "
+#~ "Zlib было влючено. Плагин сейчас отключен."
