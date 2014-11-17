@@ -1,0 +1,32 @@
+#selupload_progressBar {
+        width: 50%;
+        height: 22px;
+        border: 1px solid #111;
+        background-color: #292929;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	overflow: hidden;
+	display: none;
+}
+ 
+#selupload_progressBar div {
+        height: 100%;
+        color: #fff;
+        text-align: right;
+        line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+        width: 0;
+        background-color: #0099ff;
+	background-image: url(../img/pbar-ani.gif);
+}
+.selupload_spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px; /* half width of the spinner gif */
+    margin-top: -40px; /* half height of the spinner gif */
+    text-align:center;
+    z-index:1234;
+    overflow: auto;
+    width: 86px; /* width of the spinner gif */
+    height: 86px; /*hight of the spinner gif +2px to fix IE8 issue */
+}
