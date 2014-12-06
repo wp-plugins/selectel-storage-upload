@@ -3,7 +3,7 @@
  * Plugin Name: Selectel Storage Upload
  * Plugin URI: http://wm-talk.net/supload-wordpress-plagin-dlya-zagruzki-na-selectel
  * Description: The plugin allows you to upload files from the library to Selectel Storage
- * Version: 1.2.3
+ * Version: 1.2.4
  * Author: Mauhem
  * Author URI: http://wm-talk.net/
  * License: GNU GPLv2
@@ -106,7 +106,7 @@ function selupload_cloudUpload($postID)
             $object->write($fp);
             @fclose($fp);
             $object = $container->getObject(selupload_getName($file));
-            if (($object instanceof \OpenStackStorage\Object) and (get_option('selupload_sync') == 'onlystorage')
+            if ((($object instanceof \OpenStackStorage\Object) == true) and (get_option('selupload_delafter') == 1)
             ) {
                 @unlink($file);
             }
@@ -134,13 +134,13 @@ function selupload_thumbUpload($metadata)
                 $object = $container->createObject(selupload_getName($path));
                 $object->write($fp);
                 @fclose($fp);
+                //var_dump($object);
                 $object = $container->getObject(selupload_getName($path));
-                if (($object instanceof \OpenStackStorage\Object) and (get_option('selupload_sync') == 'onlystorage')) {
+                if ((($object instanceof \OpenStackStorage\Object) == true) and (get_option('selupload_delafter') == 1)) {
                     @unlink($path);
                 }
             }
         }
-
         return $metadata;
     } catch (Exception $e) {
         return $metadata;
@@ -219,7 +219,7 @@ function selupload_allSynch()
                     $object->write($fp);
                     @fclose($fp);
                     $object = $container->getObject($filename);
-                    if (($object instanceof \OpenStackStorage\Object) and get_option('selupload_sync') == 'onlystorage') {
+                    if (($object instanceof \OpenStackStorage\Object) and get_option('selupload_delafter') == 1) {
                         @unlink($thisfile);
                     } elseif (($object instanceof \OpenStackStorage\Object) !== true) {
                         $error = __('Impossible to upload a file',
@@ -355,7 +355,7 @@ function selupload_settingsPage()
                         <p class="description"><?php _e(
                                 'Local path to the uploaded files. By default',
                                 'selupload'
-                            ); ?>: <code>wp-content/uploads</code></p>
+                            ); ?>: <code>wp-content/uploads</code></p><?php _e('Setting duplicates of the same name from the mediafiles settings. Changing one, you change and other','selupload'); ?>.
                     </td>
                 </tr>
                 <tr>
@@ -378,7 +378,8 @@ function selupload_settingsPage()
                                 'or full url path, if only used synchronization',
                                 'selupload'
                             ); ?>
-                            <code>(http://example.com/wp-content/uploads)</code></p>
+                            <code>(http://example.com/wp-content/uploads)</code>.</p>
+                        <?php _e('Setting duplicates of the same name from the mediafiles settings. Changing one, you change and other','selupload'); ?>.
                     </td>
                 </tr>
                 <tr>
@@ -397,26 +398,18 @@ function selupload_settingsPage()
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2"><?php $options = get_option('selupload_sync'); ?>
-                        <p><b><?php _e('Synchronization settings', 'selupload'); ?>:</b></p>
-                        <input id="onlysync" type="radio" name="selupload_sync"
-                               value="onlysync" <?php checked('onlysync' == $options); ?> />
-                        <label for="onlysync"><?php _e(
-                                'Only synchronize files',
-                                'selupload'
-                            ); ?></label><br/>
-                        <input id="onlystorage" type="radio" name="selupload_sync"
-                               value="onlystorage" <?php checked(
-                            'onlystorage' == $options
-                        ); ?> />
+                    <td colspan="2">
+                        <p><b><?php _e('Synchronization settings', 'selupload'); ?>:</b></p><p>
+                        <input id="onlystorage" type="checkbox" name="selupload_delafter"
+                               value="1" <?php checked(get_option('selupload_delafter'),1); ?> />
                         <label for="onlystorage"><?php _e(
                                 'Store files only in the Selectel Storage',
                                 'selupload'
-                            ); ?>.</label>
+                            ); ?></label>
                         <code>(<?php _e(
                                 'to attach a domain / subdomain to store and specify the settings',
                                 'selupload'
-                            ); ?>).</code><br/>
+                            ); ?>).</code></p><p class="description"><?php _e('The file will be deleted from the hosting after a successful download. It will only copy in the Selectel Storage','selupload');?>.</p><p>
                         <input id="selupload_del" type="checkbox" name="selupload_del"
                                value="1" <?php checked(
                             get_option('selupload_del'),
@@ -425,7 +418,7 @@ function selupload_settingsPage()
                         <label for="selupload_del"><?php _e(
                                 'Delete files from the Selectel Storage if they are removed from the library',
                                 'selupload'
-                            ); ?>.</label>
+                            ); ?>.</label></p>
                     </td>
                 </tr>
                 </tbody>
@@ -446,8 +439,9 @@ function selupload_settingsPage()
     </script>
     <form method="post">
         <input type="button" name="archive" id="submit" class="synch button button-primary"
-               value="<?php _e('Manual synchronization', 'selupload'); ?>"
+               value="<?php _e('Full synchronization', 'selupload'); ?>"
                onclick="selupload_mansynch(files_arr,files_count)"/>
+        <p class="description"><?php _e('!WARNING! Full synchronization is not designed to synchronize a huge number of files. Firstly, it takes a lot of time, and secondly it will lead to an increase in the load on the server that might cause authorization of the host. With a large number of files is recommended that you synchronize files manually via FTP, and then use this plugin to sync.','selupload');?></p>
     </form>
     </td>
     <td style="vertical-align: top; text-align: center; padding-top: 10em">
@@ -535,9 +529,7 @@ if (get_option('selupload_del') == 1) {
 
 function selupload_scripts()
 {
-    //wp_deregister_script('jquery');
-    //wp_enqueue_script('jquery','https://code.jquery.com/jquery-1.11.1.min.js',false,'1.11.1',false);
-    wp_enqueue_script('selupload_js', plugins_url( '/js/script.js' , __FILE__ ), array( 'jquery' ), '1.2.1',true);
+    wp_enqueue_script('selupload_js', plugins_url( '/js/script.js' , __FILE__ ), array( 'jquery' ), '1.2.4',true);
 }
 function selupload_stylesheetToAdmin()
 {
@@ -556,7 +548,7 @@ function selupload_regsettings()
     register_setting('selupload_settings', 'selupload_container');
     register_setting('selupload_settings', 'selupload_pass');
     register_setting('selupload_settings', 'selupload_username');
-    register_setting('selupload_settings', 'selupload_sync');
+    register_setting('selupload_settings', 'selupload_delafter');
     register_setting('selupload_settings', 'upload_url_path');
     register_setting('selupload_settings', 'selupload_del');
 }

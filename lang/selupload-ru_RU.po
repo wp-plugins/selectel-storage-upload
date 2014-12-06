@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Selectel Storage Upload v1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-23 17:48+0300\n"
-"PO-Revision-Date: 2014-11-23 17:48+0300\n"
+"POT-Creation-Date: 2014-12-06 17:09+0300\n"
+"PO-Revision-Date: 2014-12-06 17:15+0300\n"
 "Last-Translator: Mauhem <me@wm-talk.net>\n"
 "Language-Team: Mauhem <me@wm-talk.net>\n"
 "Language: ru_RU\n"
@@ -114,6 +114,14 @@ msgstr "Локальный путь"
 msgid "Local path to the uploaded files. By default"
 msgstr "Локальный путь к загружаемым файлам. По умолчанию"
 
+#: supload.php:358 supload.php:382
+msgid ""
+"Setting duplicates of the same name from the mediafiles settings. Changing "
+"one, you change and other"
+msgstr ""
+"Настройка дублирует одноименную настройку в медиафайлах. Изменяя одну, вы "
+"изменяете и другую"
+
 # @ supload
 #: supload.php:363
 msgid "Full URL-path to files"
@@ -132,50 +140,68 @@ msgid "or full url path, if only used synchronization"
 msgstr "или полный Url адрес, если используется только синхронизация"
 
 # @ supload
-#: supload.php:386
+#: supload.php:387
 msgid "Authorization server"
 msgstr "Сервер Аторизации"
 
 # @ supload
-#: supload.php:395
+#: supload.php:396
 msgid "By default"
 msgstr "По умолчанию"
 
 # @ supload
-#: supload.php:401
+#: supload.php:402
 msgid "Synchronization settings"
 msgstr "Настройки синхронизации"
 
 # @ supload
-#: supload.php:405
-msgid "Only synchronize files"
-msgstr "Только синхронизация файлов"
-
-# @ supload
-#: supload.php:413
+#: supload.php:406
 msgid "Store files only in the Selectel Storage"
 msgstr "Хранить файлы только в Selectel Storage"
 
 # @ supload
-#: supload.php:417
+#: supload.php:410
 msgid "to attach a domain / subdomain to store and specify the settings"
 msgstr ""
 "необходимо прикрепить домен / поддомен к контейнеру в Selectel Storage и "
 "указать его в настройках"
 
+#: supload.php:412
+msgid ""
+"The file will be deleted from the hosting after a successful download. It "
+"will only copy in the Selectel Storage"
+msgstr ""
+"Файл будет удален на хостинге после успешной загрузки. Его копия останется "
+"только в Selectel Storage"
+
 # @ supload
-#: supload.php:426
+#: supload.php:419
 msgid ""
 "Delete files from the Selectel Storage if they are removed from the library"
 msgstr "Удалять файлы из Selectel Storage, если они были удалены из библиотеки"
 
 # @ supload
-#: supload.php:449
-msgid "Manual synchronization"
-msgstr "Ручная синхронизация"
+#: supload.php:442
+msgid "Full synchronization"
+msgstr "Полная синхронизация"
+
+#: supload.php:444
+msgid ""
+"!WARNING! Full synchronization is not designed to synchronize a huge number "
+"of files. Firstly, it takes a lot of time, and secondly it will lead to an "
+"increase in the load on the server that might cause authorization of the "
+"host. With a large number of files is recommended that you synchronize files "
+"manually via FTP, and then use this plugin to sync."
+msgstr ""
+"!ВНИМАНИЕ! Полная синхронизация не предназначена для синхронизации огромного "
+"количества файлов.  Во-первых, это займёт довольно много времени, во-вторых  "
+"это приведет к росту нагрузки на сервер, что может вызвать санкции со "
+"стороны хостинга. При большом количестве файлов рекомендуется сначала "
+"синхронизировать файлы через FTP вручную, а затем уже использовать этот "
+"плагин для синхронизации."
 
 # @ supload
-#: supload.php:455
+#: supload.php:449
 msgid ""
 "You can always help the development of plug-in and contribute to the "
 "emergence of new functionality."
@@ -184,34 +210,21 @@ msgstr ""
 "функциональности."
 
 # @ supload
-#: supload.php:461
+#: supload.php:455
 msgid "If you have any ideas or suggestions"
 msgstr "Если у вас есть идеи или предложения"
 
 # @ supload
-#: supload.php:464
+#: supload.php:458
 msgid "contact the author"
 msgstr "связаться с автором"
 
 # @ supload
-#: supload.php:470
+#: supload.php:464
 msgid "You can always thank the author of financially."
 msgstr "Вы всегда можете поблагодарить автора материально."
 
 # @ supload
-#: supload.php:489
+#: supload.php:483
 msgid "Yandex.Money"
 msgstr "Яндекс.Деньги"
-
-#~ msgid "Complete"
-#~ msgstr "Готово"
-
-#~ msgid "Catalog with files is not readable"
-#~ msgstr "Каталог с файлами недоступен для чтения"
-
-#~ msgid ""
-#~ "Plugin Selectel Cloud Uploader requires Zlib extension. The plugin has "
-#~ "now disabled itself."
-#~ msgstr ""
-#~ "Для работы плагина Selectel Cloud Upload необходимо, чтобы расширение "
-#~ "Zlib было влючено. Плагин сейчас отключен."
