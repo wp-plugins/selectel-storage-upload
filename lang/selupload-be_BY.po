@@ -1,0 +1,205 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Selectel Storage Upload\n"
+"POT-Creation-Date: 2014-12-06 17:09+0300\n"
+"PO-Revision-Date: 2014-12-06 17:15+0300\n"
+"Last-Translator: Mauhem <me@wm-talk.net>\n"
+"Language-Team: Mauhem <me@wm-talk.net>\n"
+"Language: be_BY\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: supload.php:27
+msgid ""
+"Plugin Selectel Cloud Uploader requires PHP 5.3.3 or higher. The plugin has "
+"now disabled itself."
+msgstr ""
+"Для працы ўбудовы Selectel Cloud Upload неабходна, каб версія PHP была не "
+"ніжэй, чым 5.3.3. Убудова зараз адключана."
+
+#: supload.php:36
+msgid ""
+"Plugin Selectel Cloud Uploader requires cURL 7.16.2+. The plugin has now "
+"disabled itself."
+msgstr ""
+"Для працы ўбудовы Selectel Cloud Upload неабходна, каб версія cURL была не "
+"ніжэй, чым 7.16.2+. Убудова зараз адключана."
+
+#: supload.php:41
+msgid ""
+"Plugin Selectel Cloud Uploader requires that cURL is compiled with OpenSSL. "
+"The plugin has now disabled itself."
+msgstr ""
+"Для працы ўбудовы Selectel Cloud Upload неабходна, каб cURL быў скампіляваны "
+"з падтрымкай OpenSSL. Убудова зараз адключана."
+
+#: supload.php:73
+msgid "Connection is successfully established. Save the settings."
+msgstr "Злучэнне паспяхова ўстаноўлена. Захавайце налады."
+
+#: supload.php:77
+msgid "Connection is not established."
+msgstr "Злучэнне з кантейнераз не  ўстаноўлена. Праверце правільнасць наладак"
+
+#: supload.php:225 supload.php:262
+msgid "Impossible to upload a file"
+msgstr "Немагчыма загрузіць файл"
+
+#: supload.php:229
+msgid "Do not have access to the file"
+msgstr "Файл не існуе ці недаступны для чытання"
+
+#: supload.php:241
+msgid "Unable to connect to the container"
+msgstr "Unable to connect to the container"
+
+#: supload.php:251
+msgid "Data empty"
+msgstr "Дадзеныя пустыя"
+
+#: supload.php:289
+msgid "Settings"
+msgstr "Наладкі"
+
+#: supload.php:307
+msgid "Type the information for access to your bucket."
+msgstr "Калі ласка, увядзіце інфармацыю для доступу да вашага кантэйнера."
+
+#: supload.php:309
+msgid "No account? <a href =\"http://goo.gl/8Z0q8H\">Sign up</a>"
+msgstr ""
+"Яшчэ няма ўліковага запісу? <a href =\"http://goo.gl/8Z0q8H"
+"\">Зарэгістравацца</a>"
+
+#: supload.php:313
+msgid "Username"
+msgstr "Імя карыстальніка"
+
+#: supload.php:324
+msgid "Password"
+msgstr "Пароль"
+
+#: supload.php:335
+msgid "Bucket"
+msgstr "Кантэйнер"
+
+#: supload.php:344
+msgid "Check the connection"
+msgstr "Праверыць злучэнне"
+
+#: supload.php:349
+msgid "Local path"
+msgstr "Лакальны шлях"
+
+#: supload.php:356
+msgid "Local path to the uploaded files. By default"
+msgstr "Лакальны шлях да загружаных файлаў. Па змаўчанні"
+
+#: supload.php:358 supload.php:382
+msgid ""
+"Setting duplicates of the same name from the mediafiles settings. Changing "
+"one, you change and other"
+msgstr ""
+"Налада дублюе аднайменную наладу ў медыяфайлах. Змяняючы адну, вы змяняеце і "
+"іншую"
+
+#: supload.php:363
+msgid "Full URL-path to files"
+msgstr "Поўны URL-шлях да файлаў"
+
+#: supload.php:374
+msgid ""
+"Enter the domain or subdomain if store files only in the Selectel Storage"
+msgstr ""
+"Калі ласка, увядзіце дамен альбо паддамен, калі захоўваеце файлы толькі ў "
+"Selectel Storage"
+
+#: supload.php:378
+msgid "or full url path, if only used synchronization"
+msgstr "або поўны URL шлях, калі выкарыстоўваецца толькі сінхранізацыя"
+
+#: supload.php:387
+msgid "Authorization server"
+msgstr "Cервер аўтарызацыі"
+
+#: supload.php:396
+msgid "By default"
+msgstr "Па змаўчанні"
+
+#: supload.php:402
+msgid "Synchronization settings"
+msgstr "Наладкі сінхранізацыі"
+
+#: supload.php:406
+msgid "Store files only in the Selectel Storage"
+msgstr "Захоўваць файлы толькі ў Selectel Storage"
+
+#: supload.php:410
+msgid "to attach a domain / subdomain to store and specify the settings"
+msgstr "трэба дадаць дамен / паддамен да кантэйнера і азначыць гэта ў наладках"
+
+#: supload.php:412
+msgid ""
+"The file will be deleted from the hosting after a successful download. It "
+"will only copy in the Selectel Storage"
+msgstr ""
+"Файл будзе выдалены на хостынгу пасля паспяховай загрузкі. Яго копія "
+"застанецца толькі ў Selectel Storage"
+
+#: supload.php:419
+msgid ""
+"Delete files from the Selectel Storage if they are removed from the library"
+msgstr "Выдаляць файлы з Selectel Storage, калі яны выдаляюцца з бібліятэкі"
+
+#: supload.php:442
+msgid "Full synchronization"
+msgstr "Поўная сінхранізацыя"
+
+#: supload.php:444
+msgid ""
+"!WARNING! Full synchronization is not designed to synchronize a huge number "
+"of files. Firstly, it takes a lot of time, and secondly it will lead to an "
+"increase in the load on the server that might cause authorization of the "
+"host. With a large number of files is recommended that you synchronize files "
+"manually via FTP, and then use this plugin to sync."
+msgstr ""
+"!УВАГА! Поўная сінхранізацыя не прызначана для сінхранізацыі велізарнай "
+"колькасці файлаў. Па-першае, гэта зойме даволі шмат часу, па-другое гэта "
+"прывядзе да росту нагрузкі на сервер, што можа выклікаць санкцыі з боку "
+"хостынгу. Пры вялікай колькасці файлаў рэкамендуецца спачатку сінхранізаваць "
+"файлы праз FTP ўручную, а затым ужо выкарыстаць гэты убудова для "
+"сінхранізацыі."
+
+#: supload.php:449
+msgid ""
+"You can always help the development of plug-in and contribute to the "
+"emergence of new functionality."
+msgstr ""
+"Вы заўсёды можаце дапамагчы развіццю плагіна і спрыяюць з'яўленню новай "
+"функцыянальнасці."
+
+#: supload.php:455
+msgid "If you have any ideas or suggestions"
+msgstr "Калі ў вас ёсць ідэі ці прапановы"
+
+#: supload.php:458
+msgid "contact the author"
+msgstr "звязацца з аўтарам"
+
+#: supload.php:464
+msgid "You can always thank the author of financially."
+msgstr "Вы заўсёды можаце падзякаваць аўтару матэрыяльна."
+
+#: supload.php:483
+msgid "Yandex.Money"
+msgstr "Яндэкс.Грошы"
