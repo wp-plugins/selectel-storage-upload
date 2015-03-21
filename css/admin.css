@@ -30,3 +30,13 @@
     width: 86px; /* width of the spinner gif */
     height: 86px; /*hight of the spinner gif +2px to fix IE8 issue */
 }
+#selupload_filelist {
+    border-left: 4px solid #7AD03A;
+    padding: 1px 12px;
+    background-color: #FFF;
+    display: none;
+    /*box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);*/
+}
+#selupload_wrap td{
+    vertical-align: top;
+}

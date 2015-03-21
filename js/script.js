@@ -1,6 +1,8 @@
 var selupload_prbar = jQuery('#selupload_progressBar');
 var selupload_synchtext = jQuery('#selupload_synchtext');
 var selupload_message = jQuery('#selupload_message');
+var selupload_filelist = jQuery('#selupload_filelist');
+var selupload_filelistdiv = jQuery('#selupload_filelistdiv');
 function selupload_progress(percent, $element) {
     selupload_prbar.show(0);
     var progressBarWidth = percent * $element.width() / 100;
@@ -43,6 +45,15 @@ function selupload_mansynch(files, count) {
     selupload_prbar.show(0);
     selupload_progress(0, selupload_prbar);
     selupload_nextfile(files, count);
+}
+function selupload_showfilelist(filelist,dirln){
+    selupload_filelistdiv.html('');
+    selupload_filelist.show(0);
+    var arr = filelist.split('||');
+    var index;
+    for (index = 0; index < arr.length; ++index) {
+        selupload_filelistdiv.html(selupload_filelistdiv.html() + arr[index].substr(dirln) + '<br />');
+    }
 }
 function selupload_testConnet() {
     jQuery('#selupload_spinner').bind("ajaxSend", function () {

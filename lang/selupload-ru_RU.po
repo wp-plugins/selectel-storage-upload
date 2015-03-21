@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Selectel Storage Upload v1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-06 17:09+0300\n"
-"PO-Revision-Date: 2014-12-06 17:15+0300\n"
+"POT-Creation-Date: 2015-03-21 17:21+0300\n"
+"PO-Revision-Date: 2015-03-21 18:21+0300\n"
 "Last-Translator: Mauhem <me@wm-talk.net>\n"
 "Language-Team: Mauhem <me@wm-talk.net>\n"
 "Language: ru_RU\n"
@@ -19,6 +19,203 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
+
+# @ supload
+#: code.php:28
+msgid "Connection is successfully established. Save the settings."
+msgstr "Соединение успешно установлено. Сохраните настройки."
+
+# @ supload
+#: code.php:32
+msgid "Connection is not established."
+msgstr "Не удалось подключиться к контейнеру."
+
+#: code.php:198 code.php:235
+msgid "Impossible to upload a file"
+msgstr "Невозможно загрузить файл"
+
+#: code.php:202
+msgid "Do not have access to the file"
+msgstr "Файл не существует или недоступен для чтения"
+
+#: code.php:214
+msgid "Unable to connect to the container"
+msgstr "Не удается подключиться к контейнеру"
+
+#: code.php:224
+msgid "Data empty"
+msgstr "Данные пустые"
+
+# @ supload
+#: code.php:262
+msgid "Settings"
+msgstr "Настройки"
+
+# @ supload
+#: code.php:283
+msgid "Type the information for access to your bucket."
+msgstr "Введите информацию для доступа к вашему контейнеру."
+
+#: code.php:285
+msgid "No account? <a href =\"http://goo.gl/8Z0q8H\">Sign up</a>"
+msgstr "Нет аккаунта? <a href =\"http://goo.gl/8Z0q8H\">Зарегистрироваться</a>"
+
+# @ supload
+#: code.php:290
+msgid "Username"
+msgstr "Имя пользователя"
+
+# @ supload
+#: code.php:301
+msgid "Password"
+msgstr "Пароль"
+
+# @ supload
+#: code.php:312
+msgid "Bucket"
+msgstr "Контейнер"
+
+# @ supload
+#: code.php:321
+msgid "Check the connection"
+msgstr "Проверить соединение"
+
+# @ supload
+#: code.php:326
+msgid "Local path"
+msgstr "Локальный путь"
+
+# @ supload
+#: code.php:333
+msgid "Local path to the uploaded files. By default"
+msgstr "Локальный путь к загружаемым файлам. По умолчанию"
+
+#: code.php:336 code.php:361
+msgid ""
+"Setting duplicates of the same name from the mediafiles settings. Changing "
+"one, you change and other"
+msgstr ""
+"Настройка дублирует одноименную настройку в медиафайлах. Изменяя одну, вы "
+"изменяете и другую"
+
+# @ supload
+#: code.php:342
+msgid "Full URL-path to files"
+msgstr "Полный URL-путь к файлам"
+
+# @ supload
+#: code.php:353
+msgid ""
+"Enter the domain or subdomain if store files only in the Selectel Storage"
+msgstr ""
+"Введите адрес домена/поддомена, если файлы хранятся только в Selectel Storage"
+
+# @ supload
+#: code.php:357
+msgid "or full url path, if only used synchronization"
+msgstr "или полный Url адрес, если используется только синхронизация"
+
+# @ supload
+#: code.php:367
+msgid "Authorization server"
+msgstr "Сервер Аторизации"
+
+# @ supload
+#: code.php:376 code.php:391
+msgid "By default"
+msgstr "По умолчанию"
+
+#: code.php:382
+msgid "Mask files"
+msgstr "Маска файлов"
+
+#: code.php:391
+msgid "for all files, 2 or more values separated by a comma (for example: "
+msgstr "для всех файлов, 2 и более значения разделяются запятой (например:"
+
+# @ supload
+#: code.php:397
+msgid "Synchronization settings"
+msgstr "Настройки синхронизации"
+
+# @ supload
+#: code.php:403
+msgid "Store files only in the Selectel Storage"
+msgstr "Хранить файлы только в Selectel Storage"
+
+# @ supload
+#: code.php:407
+msgid "to attach a domain / subdomain to store and specify the settings"
+msgstr ""
+"чтобы не было \"битых\" ссылок необходимо прикрепить домен / поддомен к "
+"контейнеру в Selectel Storage и указать его в настройках"
+
+#: code.php:411
+msgid ""
+"The file will be deleted from the hosting after a successful download. It "
+"will only copy in the Selectel Storage"
+msgstr ""
+"Файл будет удален на хостинге после успешной загрузки. Его копия останется "
+"только в Selectel Storage"
+
+# @ supload
+#: code.php:421
+msgid ""
+"Delete files from the Selectel Storage if they are removed from the library"
+msgstr "Удалять файлы из Selectel Storage, если они были удалены из библиотеки"
+
+# @ supload
+#: code.php:444
+msgid "Full synchronization"
+msgstr "Полная синхронизация"
+
+#: code.php:447
+msgid "Show the list of files to synchronize"
+msgstr "Файлы для синхронизации"
+
+#: code.php:454
+msgid ""
+"!WARNING! Full synchronization is not designed to synchronize a huge number "
+"of files. Firstly, it takes a lot of time, and secondly it will lead to an "
+"increase in the load on the server that might cause authorization of the "
+"host. With a large number of files is recommended that you synchronize files "
+"manually via FTP, and then use this plugin to sync."
+msgstr ""
+"!ВНИМАНИЕ! Полная синхронизация не предназначена для синхронизации огромного "
+"количества файлов.  Во-первых, это займёт довольно много времени, во-вторых  "
+"это приведет к росту нагрузки на сервер, что может вызвать санкции со "
+"стороны хостинга. При большом количестве файлов рекомендуется сначала "
+"синхронизировать файлы через FTP вручную, а затем уже использовать этот "
+"плагин для синхронизации в автоматическом режиме вновь добавляемых файлов."
+
+# @ supload
+#: code.php:461
+msgid ""
+"You can always help the development of plug-in and contribute to the "
+"emergence of new functionality."
+msgstr ""
+"Вы всегда можете помочь развитию плагина и способствовать появлению новой "
+"функциональности."
+
+# @ supload
+#: code.php:467
+msgid "If you have any ideas or suggestions"
+msgstr "Если у вас есть идеи или предложения"
+
+# @ supload
+#: code.php:470
+msgid "contact the author"
+msgstr "связаться с автором"
+
+# @ supload
+#: code.php:476
+msgid "You can always thank the author of financially."
+msgstr "Вы всегда можете поблагодарить автора материально."
+
+# @ supload
+#: code.php:495
+msgid "Yandex.Money"
+msgstr "Яндекс.Деньги"
 
 #: supload.php:27
 msgid ""
@@ -43,188 +240,3 @@ msgid ""
 msgstr ""
 "Для работы плагина Selectel Cloud Upload необходимо, чтобы cURL был "
 "скомпилирован с поддержкой OpenSSL. Плагин сейчас отключен."
-
-# @ supload
-#: supload.php:73
-msgid "Connection is successfully established. Save the settings."
-msgstr "Соединение успешно установлено. Сохраните настройки."
-
-# @ supload
-#: supload.php:77
-msgid "Connection is not established."
-msgstr "Не удалось подключиться к контейнеру."
-
-#: supload.php:225 supload.php:262
-msgid "Impossible to upload a file"
-msgstr "Невозможно загрузить файл"
-
-#: supload.php:229
-msgid "Do not have access to the file"
-msgstr "Файл не существует или недоступен для чтения"
-
-#: supload.php:241
-msgid "Unable to connect to the container"
-msgstr "Не удается подключиться к контейнеру"
-
-#: supload.php:251
-msgid "Data empty"
-msgstr "Данные пустые"
-
-# @ supload
-#: supload.php:289
-msgid "Settings"
-msgstr "Настройки"
-
-# @ supload
-#: supload.php:307
-msgid "Type the information for access to your bucket."
-msgstr "Введите информацию для доступа к вашему контейнеру."
-
-#: supload.php:309
-msgid "No account? <a href =\"http://goo.gl/8Z0q8H\">Sign up</a>"
-msgstr "Нет аккаунта? <a href =\"http://goo.gl/8Z0q8H\">Зарегистрироваться</a>"
-
-# @ supload
-#: supload.php:313
-msgid "Username"
-msgstr "Имя пользователя"
-
-# @ supload
-#: supload.php:324
-msgid "Password"
-msgstr "Пароль"
-
-# @ supload
-#: supload.php:335
-msgid "Bucket"
-msgstr "Контейнер"
-
-# @ supload
-#: supload.php:344
-msgid "Check the connection"
-msgstr "Проверить соединение"
-
-# @ supload
-#: supload.php:349
-msgid "Local path"
-msgstr "Локальный путь"
-
-# @ supload
-#: supload.php:356
-msgid "Local path to the uploaded files. By default"
-msgstr "Локальный путь к загружаемым файлам. По умолчанию"
-
-#: supload.php:358 supload.php:382
-msgid ""
-"Setting duplicates of the same name from the mediafiles settings. Changing "
-"one, you change and other"
-msgstr ""
-"Настройка дублирует одноименную настройку в медиафайлах. Изменяя одну, вы "
-"изменяете и другую"
-
-# @ supload
-#: supload.php:363
-msgid "Full URL-path to files"
-msgstr "Полный URL-путь к файлам"
-
-# @ supload
-#: supload.php:374
-msgid ""
-"Enter the domain or subdomain if store files only in the Selectel Storage"
-msgstr ""
-"Введите адрес домена/поддомена, если файлы хранятся только в Selectel Storage"
-
-# @ supload
-#: supload.php:378
-msgid "or full url path, if only used synchronization"
-msgstr "или полный Url адрес, если используется только синхронизация"
-
-# @ supload
-#: supload.php:387
-msgid "Authorization server"
-msgstr "Сервер Аторизации"
-
-# @ supload
-#: supload.php:396
-msgid "By default"
-msgstr "По умолчанию"
-
-# @ supload
-#: supload.php:402
-msgid "Synchronization settings"
-msgstr "Настройки синхронизации"
-
-# @ supload
-#: supload.php:406
-msgid "Store files only in the Selectel Storage"
-msgstr "Хранить файлы только в Selectel Storage"
-
-# @ supload
-#: supload.php:410
-msgid "to attach a domain / subdomain to store and specify the settings"
-msgstr ""
-"необходимо прикрепить домен / поддомен к контейнеру в Selectel Storage и "
-"указать его в настройках"
-
-#: supload.php:412
-msgid ""
-"The file will be deleted from the hosting after a successful download. It "
-"will only copy in the Selectel Storage"
-msgstr ""
-"Файл будет удален на хостинге после успешной загрузки. Его копия останется "
-"только в Selectel Storage"
-
-# @ supload
-#: supload.php:419
-msgid ""
-"Delete files from the Selectel Storage if they are removed from the library"
-msgstr "Удалять файлы из Selectel Storage, если они были удалены из библиотеки"
-
-# @ supload
-#: supload.php:442
-msgid "Full synchronization"
-msgstr "Полная синхронизация"
-
-#: supload.php:444
-msgid ""
-"!WARNING! Full synchronization is not designed to synchronize a huge number "
-"of files. Firstly, it takes a lot of time, and secondly it will lead to an "
-"increase in the load on the server that might cause authorization of the "
-"host. With a large number of files is recommended that you synchronize files "
-"manually via FTP, and then use this plugin to sync."
-msgstr ""
-"!ВНИМАНИЕ! Полная синхронизация не предназначена для синхронизации огромного "
-"количества файлов.  Во-первых, это займёт довольно много времени, во-вторых  "
-"это приведет к росту нагрузки на сервер, что может вызвать санкции со "
-"стороны хостинга. При большом количестве файлов рекомендуется сначала "
-"синхронизировать файлы через FTP вручную, а затем уже использовать этот "
-"плагин для синхронизации."
-
-# @ supload
-#: supload.php:449
-msgid ""
-"You can always help the development of plug-in and contribute to the "
-"emergence of new functionality."
-msgstr ""
-"Вы всегда можете помочь развитию плагина и способствовать появлению новой "
-"функциональности."
-
-# @ supload
-#: supload.php:455
-msgid "If you have any ideas or suggestions"
-msgstr "Если у вас есть идеи или предложения"
-
-# @ supload
-#: supload.php:458
-msgid "contact the author"
-msgstr "связаться с автором"
-
-# @ supload
-#: supload.php:464
-msgid "You can always thank the author of financially."
-msgstr "Вы всегда можете поблагодарить автора материально."
-
-# @ supload
-#: supload.php:483
-msgid "Yandex.Money"
-msgstr "Яндекс.Деньги"
