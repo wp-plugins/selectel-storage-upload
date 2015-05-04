@@ -1,6 +1,25 @@
 {
-    "require": {
-        "php": ">=5.3.3",
-        "endeveit/open-stack-storage": "dev-master"
+  "name": "Mauhem/selectel-storage-upload",
+  "type": "plugin",
+  "description": "This Wordpress plugin allows you to automatically synchronize media files that are downloaded to the articles or just the library, to Selectel Storage. It also supports synchronization manually.",
+  "keywords": [
+    "openstack",
+    "storage",
+    "cloudfiles",
+    "selectel"
+  ],
+  "homepage": "https://github.com/Mauhem/selectel-storage-upload",
+  "license": "GPLv2",
+  "authors": [
+    {
+      "name": "Mauhem",
+      "email": "me@wm-talk.net",
+      "homepage": "https://wm-talk.net"
     }
+  ],
+  "require": {
+    "php": ">=5.3.3",
+    "endeveit/open-stack-storage": "dev-master",
+    "katzgrau/klogger": "dev-master"
+  }
 }

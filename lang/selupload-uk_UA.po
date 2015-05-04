@@ -1,0 +1,227 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Selectel Storage Upload\n"
+"POT-Creation-Date: 2015-05-04 21:28+0300\n"
+"PO-Revision-Date: 2015-05-04 21:28+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uk_UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: code.php:39
+msgid "Connection is successfully established. Save the settings."
+msgstr "Підключення успішно встановлено. Зберегти налаштування."
+
+#: code.php:43
+msgid "Connection is not established."
+msgstr "З'єднання не встановлено."
+
+#: code.php:416 code.php:453
+msgid "Impossible to upload a file"
+msgstr "Неможливо завантажити файл"
+
+#: code.php:420
+msgid "Do not have access to the file"
+msgstr "У вас немає доступу до файлу"
+
+#: code.php:432
+msgid "Unable to connect to the container"
+msgstr "Не вдається підключитися до контейнеру"
+
+#: code.php:442
+msgid "Data empty"
+msgstr "Дані порожні"
+
+#: code.php:483
+msgid "Settings"
+msgstr "Налаштування"
+
+#: code.php:504
+msgid "Type the information for access to your container."
+msgstr "Введіть інформацію для доступу до контейнера."
+
+#: code.php:506
+msgid "No account? <a href =\"http://goo.gl/8Z0q8H\">Sign up</a>"
+msgstr ""
+"Ви не зареєстровані? <a href =\"http://goo.gl/8Z0q8H\"> Зареєструватися </a>"
+
+#: code.php:511
+msgid "Username"
+msgstr "Логін"
+
+#: code.php:522
+msgid "Password"
+msgstr "Пароль"
+
+#: code.php:533
+msgid "Container"
+msgstr "Контейнер"
+
+#: code.php:542
+msgid "Check the connection"
+msgstr "Перевірити підключення"
+
+#: code.php:547
+msgid "Local path"
+msgstr "Локальний шлях"
+
+#: code.php:556
+msgid "Local path to the uploaded files. By default"
+msgstr "Локальний шлях до завантажених файлів. За замовчуванням"
+
+#: code.php:559 code.php:584
+msgid ""
+"Setting duplicates of the same name from the mediafiles settings. Changing "
+"one, you change and other"
+msgstr ""
+"Налаштування дублює однойменну настройку в медіафайлах. Змінюючи одну, ви "
+"змінюєте й іншу."
+
+#: code.php:565
+msgid "Full URL-path to files"
+msgstr "Повна адреса до файлів"
+
+#: code.php:576
+msgid ""
+"Enter the domain or subdomain if store files only in the Selectel Storage"
+msgstr ""
+"Введіть адресу домену / піддомена, якщо файли зберігаються тільки в Selectel "
+"Storage"
+
+#: code.php:580
+msgid "or full url path, if only used synchronization"
+msgstr "або повний Url адресу, якщо використовується тільки синхронізація"
+
+#: code.php:590
+msgid "Authorization server"
+msgstr "Сервер авторизації"
+
+#: code.php:599 code.php:614
+msgid "By default"
+msgstr "За замовчуванням"
+
+#: code.php:605
+msgid "Mask files"
+msgstr "Маска файлів"
+
+#: code.php:615
+msgid "for all files, 2 or more values separated by a comma (for example: "
+msgstr "для всіх файлів, 2 і більше значення розділяються комою (наприклад:"
+
+#: code.php:622
+msgid "Synchronization settings"
+msgstr "Налаштування синхронізації"
+
+#: code.php:628
+msgid "Store files only in the Selectel Storage"
+msgstr "Зберігати файли тільки в Selectel Storage"
+
+#: code.php:632
+msgid "to attach a domain / subdomain to store and specify the settings"
+msgstr ""
+"щоб не було \"битих\" посилань необхідно прикріпити домен / піддомен до "
+"контейнера в Selectel Storage і вказати його в налаштуваннях"
+
+#: code.php:636
+msgid ""
+"The file will be deleted from the hosting after a successful download. It "
+"will only copy in the Selectel Storage"
+msgstr ""
+"Файл буде видалений на хостингу після успішного завантаження. Його копія "
+"залишиться тільки в Selectel Storage"
+
+#: code.php:646
+msgid ""
+"Delete files from the Selectel Storage if they are removed from the library"
+msgstr ""
+"Видаляти файли з Selectel Storage, якщо вони були видалені з бібліотеки"
+
+#: code.php:658
+msgid "Do not overwrite the file if it already exists in the storage"
+msgstr "Чи не перезаписувати файл, якщо він вже є в сховищі"
+
+#: code.php:669
+msgid "Enable debug mode. Do not enable unless you know what it is."
+msgstr "Включити режим налагодження. Не вмикайте, якщо не знаєте навіщо це."
+
+#: code.php:691
+msgid "Full synchronization"
+msgstr "Повна синхронізація"
+
+#: code.php:694
+msgid "Show the list of files to synchronize"
+msgstr "Файли для синхронізації"
+
+#: code.php:704
+msgid ""
+"!WARNING! Full synchronization is not designed to synchronize a huge number "
+"of files. Firstly, it takes a lot of time, and secondly it will lead to an "
+"increase in the load on the server that might cause authorization of the "
+"host. With a large number of files is recommended that you synchronize files "
+"manually via FTP, and then use this plugin to sync."
+msgstr ""
+"!УВАГА! Повна синхронізація не призначена для синхронізації величезної "
+"кількості файлів. По-перше, це займе досить багато часу, по-друге це "
+"призведе до зростання навантаження на сервер, що може викликати санкції з "
+"боку хостингу. При великій кількості файлів рекомендується спочатку "
+"синхронізувати файли через FTP вручну, а потім вже використовувати цей "
+"плагін для синхронізації в автоматичному режимі знову додаються файлів."
+
+#: code.php:711
+msgid ""
+"You can always help the development of plug-in and contribute to the "
+"emergence of new functionality."
+msgstr ""
+"Ви завжди можете допомогти розвитку плагіна і сприяти появі нової "
+"функціональності"
+
+#: code.php:717
+msgid "If you have any ideas or suggestions"
+msgstr "Якщо у вас є ідеї або пропозиції"
+
+#: code.php:720
+msgid "contact the author"
+msgstr "зв'язатись із автором"
+
+#: code.php:726
+msgid "You can always thank the author of financially."
+msgstr "Ви завжди можете подякувати автора матеріально"
+
+#: code.php:745
+msgid "Yandex.Money"
+msgstr "Yandex.Money"
+
+#: supload.php:27
+msgid ""
+"Plugin Selectel Cloud Uploader requires PHP 5.3.3 or higher. The plugin has "
+"now disabled itself."
+msgstr ""
+"Для роботи плагіна Selectel Cloud Upload необхідно, щоб версія PHP була не "
+"нижче 5.3.3. Плагін зараз відключений."
+
+#: supload.php:36
+msgid ""
+"Plugin Selectel Cloud Uploader requires cURL 7.16.2+. The plugin has now "
+"disabled itself."
+msgstr ""
+"Для роботи плагіна Selectel Cloud Upload необхідно, щоб версія cURL була не "
+"нижче 7.16.2+. Плагін зараз відключений."
+
+#: supload.php:41
+msgid ""
+"Plugin Selectel Cloud Uploader requires that cURL is compiled with OpenSSL. "
+"The plugin has now disabled itself."
+msgstr ""
+"Для роботи плагіна Selectel Cloud Upload необхідно, щоб cURL було "
+"скомпільовано з підтримкою OpenSSL. Плагін зараз відключений."

@@ -7,5 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Resty' => array($vendorDir . '/resty/resty'),
+    'Psr\\Log\\' => array($vendorDir . '/psr/log'),
     'OpenStackStorage' => array($vendorDir . '/endeveit/open-stack-storage/src'),
 );

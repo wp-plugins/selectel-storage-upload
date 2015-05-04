@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Selectel Storage Upload\n"
-"POT-Creation-Date: 2015-03-21 17:25+0300\n"
-"PO-Revision-Date: 2015-03-21 17:26+0300\n"
-"Last-Translator: Mauhem <me@wm-talk.net>\n"
-"Language-Team: Mauhem <me@wm-talk.net>\n"
-"Language: so_KE\n"
+"POT-Creation-Date: 2015-05-04 20:45+0300\n"
+"PO-Revision-Date: 2015-05-04 20:46+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -15,136 +15,144 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: code.php:28
+#: code.php:39
 msgid "Connection is successfully established. Save the settings."
 msgstr ""
 
-#: code.php:32
+#: code.php:43
 msgid "Connection is not established."
 msgstr ""
 
-#: code.php:198 code.php:235
+#: code.php:411 code.php:448
 msgid "Impossible to upload a file"
 msgstr ""
 
-#: code.php:202
+#: code.php:415
 msgid "Do not have access to the file"
 msgstr ""
 
-#: code.php:214
+#: code.php:427
 msgid "Unable to connect to the container"
 msgstr ""
 
-#: code.php:224
+#: code.php:437
 msgid "Data empty"
 msgstr ""
 
-#: code.php:262
+#: code.php:478
 msgid "Settings"
 msgstr ""
 
-#: code.php:283
-msgid "Type the information for access to your bucket."
+#: code.php:499
+msgid "Type the information for access to your container."
 msgstr ""
 
-#: code.php:285
+#: code.php:501
 msgid "No account? <a href =\"http://goo.gl/8Z0q8H\">Sign up</a>"
 msgstr ""
 
-#: code.php:290
+#: code.php:506
 msgid "Username"
 msgstr ""
 
-#: code.php:301
+#: code.php:517
 msgid "Password"
 msgstr ""
 
-#: code.php:312
-msgid "Bucket"
+#: code.php:528
+msgid "Container"
 msgstr ""
 
-#: code.php:321
+#: code.php:537
 msgid "Check the connection"
 msgstr ""
 
-#: code.php:326
+#: code.php:542
 msgid "Local path"
 msgstr ""
 
-#: code.php:333
+#: code.php:551
 msgid "Local path to the uploaded files. By default"
 msgstr ""
 
-#: code.php:336 code.php:361
+#: code.php:554 code.php:579
 msgid ""
 "Setting duplicates of the same name from the mediafiles settings. Changing "
 "one, you change and other"
 msgstr ""
 
-#: code.php:342
+#: code.php:560
 msgid "Full URL-path to files"
 msgstr ""
 
-#: code.php:353
+#: code.php:571
 msgid ""
 "Enter the domain or subdomain if store files only in the Selectel Storage"
 msgstr ""
 
-#: code.php:357
+#: code.php:575
 msgid "or full url path, if only used synchronization"
 msgstr ""
 
-#: code.php:367
+#: code.php:585
 msgid "Authorization server"
 msgstr ""
 
-#: code.php:376 code.php:391
+#: code.php:594 code.php:609
 msgid "By default"
 msgstr ""
 
-#: code.php:382
+#: code.php:600
 msgid "Mask files"
 msgstr ""
 
-#: code.php:391
+#: code.php:610
 msgid "for all files, 2 or more values separated by a comma (for example: "
 msgstr ""
 
-#: code.php:397
+#: code.php:617
 msgid "Synchronization settings"
 msgstr ""
 
-#: code.php:403
+#: code.php:623
 msgid "Store files only in the Selectel Storage"
 msgstr ""
 
-#: code.php:407
+#: code.php:627
 msgid "to attach a domain / subdomain to store and specify the settings"
 msgstr ""
 
-#: code.php:411
+#: code.php:631
 msgid ""
 "The file will be deleted from the hosting after a successful download. It "
 "will only copy in the Selectel Storage"
 msgstr ""
 
-#: code.php:421
+#: code.php:641
 msgid ""
 "Delete files from the Selectel Storage if they are removed from the library"
 msgstr ""
 
-#: code.php:444
+#: code.php:653
+msgid "Do not overwrite the file if it already exists in the storage"
+msgstr ""
+
+#: code.php:664
+msgid "Enable debug mode. Do not enable unless you know what it is."
+msgstr ""
+
+#: code.php:686
 msgid "Full synchronization"
 msgstr ""
 
-#: code.php:447
+#: code.php:689
 msgid "Show the list of files to synchronize"
 msgstr ""
 
-#: code.php:454
+#: code.php:699
 msgid ""
 "!WARNING! Full synchronization is not designed to synchronize a huge number "
 "of files. Firstly, it takes a lot of time, and secondly it will lead to an "
@@ -153,25 +161,25 @@ msgid ""
 "manually via FTP, and then use this plugin to sync."
 msgstr ""
 
-#: code.php:461
+#: code.php:706
 msgid ""
 "You can always help the development of plug-in and contribute to the "
 "emergence of new functionality."
 msgstr ""
 
-#: code.php:467
+#: code.php:712
 msgid "If you have any ideas or suggestions"
 msgstr ""
 
-#: code.php:470
+#: code.php:715
 msgid "contact the author"
 msgstr ""
 
-#: code.php:476
+#: code.php:721
 msgid "You can always thank the author of financially."
 msgstr ""
 
-#: code.php:495
+#: code.php:740
 msgid "Yandex.Money"
 msgstr ""
 

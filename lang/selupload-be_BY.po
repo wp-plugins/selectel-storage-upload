@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Selectel Storage Upload\n"
-"POT-Creation-Date: 2015-03-21 17:24+0300\n"
-"PO-Revision-Date: 2015-03-21 17:25+0300\n"
+"POT-Creation-Date: 2015-05-04 21:28+0300\n"
+"PO-Revision-Date: 2015-05-04 21:28+0300\n"
 "Last-Translator: Mauhem <me@wm-talk.net>\n"
 "Language-Team: Mauhem <me@wm-talk.net>\n"
 "Language: be_BY\n"
@@ -19,69 +19,69 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: code.php:28
+#: code.php:39
 msgid "Connection is successfully established. Save the settings."
 msgstr "Злучэнне паспяхова ўстаноўлена. Захавайце налады."
 
-#: code.php:32
+#: code.php:43
 msgid "Connection is not established."
 msgstr "Злучэнне з кантейнераз не  ўстаноўлена. Праверце правільнасць наладак"
 
-#: code.php:198 code.php:235
+#: code.php:416 code.php:453
 msgid "Impossible to upload a file"
 msgstr "Немагчыма загрузіць файл"
 
-#: code.php:202
+#: code.php:420
 msgid "Do not have access to the file"
 msgstr "Файл не існуе ці недаступны для чытання"
 
-#: code.php:214
+#: code.php:432
 msgid "Unable to connect to the container"
 msgstr "Unable to connect to the container"
 
-#: code.php:224
+#: code.php:442
 msgid "Data empty"
 msgstr "Дадзеныя пустыя"
 
-#: code.php:262
+#: code.php:483
 msgid "Settings"
 msgstr "Наладкі"
 
-#: code.php:283
-msgid "Type the information for access to your bucket."
+#: code.php:504
+msgid "Type the information for access to your container."
 msgstr "Калі ласка, увядзіце інфармацыю для доступу да вашага кантэйнера."
 
-#: code.php:285
+#: code.php:506
 msgid "No account? <a href =\"http://goo.gl/8Z0q8H\">Sign up</a>"
 msgstr ""
 "Яшчэ няма ўліковага запісу? <a href =\"http://goo.gl/8Z0q8H"
 "\">Зарэгістравацца</a>"
 
-#: code.php:290
+#: code.php:511
 msgid "Username"
 msgstr "Імя карыстальніка"
 
-#: code.php:301
+#: code.php:522
 msgid "Password"
 msgstr "Пароль"
 
-#: code.php:312
-msgid "Bucket"
+#: code.php:533
+msgid "Container"
 msgstr "Кантэйнер"
 
-#: code.php:321
+#: code.php:542
 msgid "Check the connection"
 msgstr "Праверыць злучэнне"
 
-#: code.php:326
+#: code.php:547
 msgid "Local path"
 msgstr "Лакальны шлях"
 
-#: code.php:333
+#: code.php:556
 msgid "Local path to the uploaded files. By default"
 msgstr "Лакальны шлях да загружаных файлаў. Па змаўчанні"
 
-#: code.php:336 code.php:361
+#: code.php:559 code.php:584
 msgid ""
 "Setting duplicates of the same name from the mediafiles settings. Changing "
 "one, you change and other"
@@ -89,50 +89,50 @@ msgstr ""
 "Налада дублюе аднайменную наладу ў медыяфайлах. Змяняючы адну, вы змяняеце і "
 "іншую"
 
-#: code.php:342
+#: code.php:565
 msgid "Full URL-path to files"
 msgstr "Поўны URL-шлях да файлаў"
 
-#: code.php:353
+#: code.php:576
 msgid ""
 "Enter the domain or subdomain if store files only in the Selectel Storage"
 msgstr ""
 "Калі ласка, увядзіце дамен альбо паддамен, калі захоўваеце файлы толькі ў "
 "Selectel Storage"
 
-#: code.php:357
+#: code.php:580
 msgid "or full url path, if only used synchronization"
 msgstr "або поўны URL шлях, калі выкарыстоўваецца толькі сінхранізацыя"
 
-#: code.php:367
+#: code.php:590
 msgid "Authorization server"
 msgstr "Cервер аўтарызацыі"
 
-#: code.php:376 code.php:391
+#: code.php:599 code.php:614
 msgid "By default"
 msgstr "Па змаўчанні"
 
-#: code.php:382
+#: code.php:605
 msgid "Mask files"
 msgstr "Маска файлаў"
 
-#: code.php:391
+#: code.php:615
 msgid "for all files, 2 or more values separated by a comma (for example: "
 msgstr "для ўсіх файлаў, 2 або больш значэнняў падзяляюцца коскамі (напрыклад:"
 
-#: code.php:397
+#: code.php:622
 msgid "Synchronization settings"
 msgstr "Наладкі сінхранізацыі"
 
-#: code.php:403
+#: code.php:628
 msgid "Store files only in the Selectel Storage"
 msgstr "Захоўваць файлы толькі ў Selectel Storage"
 
-#: code.php:407
+#: code.php:632
 msgid "to attach a domain / subdomain to store and specify the settings"
 msgstr "трэба дадаць дамен / паддамен да кантэйнера і азначыць гэта ў наладках"
 
-#: code.php:411
+#: code.php:636
 msgid ""
 "The file will be deleted from the hosting after a successful download. It "
 "will only copy in the Selectel Storage"
@@ -140,20 +140,29 @@ msgstr ""
 "Файл будзе выдалены на хостынгу пасля паспяховай загрузкі. Яго копія "
 "застанецца толькі ў Selectel Storage"
 
-#: code.php:421
+#: code.php:646
 msgid ""
 "Delete files from the Selectel Storage if they are removed from the library"
 msgstr "Выдаляць файлы з Selectel Storage, калі яны выдаляюцца з бібліятэкі"
 
-#: code.php:444
+#: code.php:658
+msgid "Do not overwrite the file if it already exists in the storage"
+msgstr "Не перазапісваць файл, калі ён ужо існуе у сховішчы"
+
+#: code.php:669
+msgid "Enable debug mode. Do not enable unless you know what it is."
+msgstr ""
+"Ўключыць рэжым адладкі. Не ўключайце, калі вы не ведаеце, што гэта такое."
+
+#: code.php:691
 msgid "Full synchronization"
 msgstr "Поўная сінхранізацыя"
 
-#: code.php:447
+#: code.php:694
 msgid "Show the list of files to synchronize"
 msgstr "Файлы для сінхранізацыі"
 
-#: code.php:454
+#: code.php:704
 msgid ""
 "!WARNING! Full synchronization is not designed to synchronize a huge number "
 "of files. Firstly, it takes a lot of time, and secondly it will lead to an "
@@ -168,7 +177,7 @@ msgstr ""
 "файлы праз FTP ўручную, а затым ужо выкарыстаць гэты убудова для "
 "сінхранізацыі."
 
-#: code.php:461
+#: code.php:711
 msgid ""
 "You can always help the development of plug-in and contribute to the "
 "emergence of new functionality."
@@ -176,19 +185,19 @@ msgstr ""
 "Вы заўсёды можаце дапамагчы развіццю плагіна і спрыяюць з'яўленню новай "
 "функцыянальнасці."
 
-#: code.php:467
+#: code.php:717
 msgid "If you have any ideas or suggestions"
 msgstr "Калі ў вас ёсць ідэі ці прапановы"
 
-#: code.php:470
+#: code.php:720
 msgid "contact the author"
 msgstr "звязацца з аўтарам"
 
-#: code.php:476
+#: code.php:726
 msgid "You can always thank the author of financially."
 msgstr "Вы заўсёды можаце падзякаваць аўтару матэрыяльна."
 
-#: code.php:495
+#: code.php:745
 msgid "Yandex.Money"
 msgstr "Яндэкс.Грошы"
 
@@ -215,3 +224,6 @@ msgid ""
 msgstr ""
 "Для працы ўбудовы Selectel Cloud Upload неабходна, каб cURL быў скампіляваны "
 "з падтрымкай OpenSSL. Убудова зараз адключана."
+
+#~ msgid "Bucket"
+#~ msgstr "Кантэйнер"

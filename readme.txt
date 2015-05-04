@@ -2,17 +2,17 @@
 Contributors: Mauhem
 Donate link: http://wm-talk.net/supload-wordpress-plagin-dlya-zagruzki-na-selectel
 Tags: Uploads, Selectel, CDN, Cloud, Storage, media library, OpenStack, Object storage
-Requires at least: 3.0.1
-Tested up to: 4.1.1
-Stable tag: 1.3.0
-License: GPLv2
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Requires at least: 3.5
+Tested up to: 4.2.1
+Stable tag: 1.4.0
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 This plugin allows you to automatically synchronize media files that are downloaded to the articles or just the library, to Selectel Storage.
 
 == Description ==
 This plugin allows you to synchronize files that are uploaded from the media library Wordpress with Selectel Storage (or othet OpenStack Object Storage). Synchronization takes place either in an automatic mode (at upload time) or manually. Supported function to delete files from Selectel Storage when they are removed from the library.
-This plugin allows you to securely store files, and save significant site traffic if you use a domain / subdomain with public bucket.
+This plugin allows you to securely store files, and save significant site traffic if you use a domain / subdomain with public container.
 
 In Russian:<br />
 Этот плагин позволяет синхронизировать файлы, загруженные из медиа-библиотеки Wordpress  в облачное хранилище Selectel (или любой другой OpenStack Object Storage). Синхронизация происходит либо в автоматическом режиме (на этапе загрузки), либо вручную. Поддерживается функция удаления файлов из облачного хранилища Selectel, когда они удаляются из библиотеки.<br />
@@ -43,7 +43,7 @@ In Russian:<br />
 Проблема с чтением файла. Проверьте существует ли файл и права доступа к нему.
 
 * <strong>Invalid response from the authentication service.</strong><br />
-Возмодны два варианта:
+Возможны два варианта:
 1. Хостер блокирует доступ к серверу Selectel (по умолчанию: auth.selcdn.ru, порт 443). Обратитесь к техподдержке хостера.
 2. Проблема на сервере Selectel. Просто подождите, либо сообщите об ошиббке техподдержке.
 
